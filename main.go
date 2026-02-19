@@ -74,7 +74,7 @@ func main() {
 
 		computer := choices[rand.IntN(len(choices))]
 
-		if isValidChoice(user, choices) {
+		if !isValidChoice(user, choices) {
 			fmt.Println("Invalid choice")
 			pause(reader)
 			continue
